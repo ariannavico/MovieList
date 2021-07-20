@@ -1,0 +1,36 @@
+main input{
+    display: none;
+}
+main div {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    top: 0;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.92);
+    text-align: center;
+    padding: 50px 0 100px;
+    overflow-y: scroll;
+    z-index: 5;
+}
+main div ul li{
+    margin-bottom: 20px;
+}
+main input:checked ~ div{
+    display: block;
+}
+.icon-close{
+    transform: rotate(45deg) translateX(-100%);
+    position: fixed;
+    left: 50%;
+    z-index: 6;
+    bottom: 20px;
+    font-size: 3em !important;
+    color: #fff;
+}
+.icon-open{
+    position: relative;
+    top: 5px;
+}
